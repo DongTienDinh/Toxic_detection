@@ -1,0 +1,12 @@
+{
+  "augmentation_version": "vi_social_aug_v1",
+  "augmentation_seed": 20261022,
+  "candidate_rate": 0.25,
+  "candidate_pool_version": "vi_candidate_pool_v1",
+  "max_length": 128,
+  "max_edits": 1,
+  "teencode_probability_when_both_eligible": 0.5,
+  "lexicon_path": "resources/teencode_lexicon.json",
+  "allowlist_path": "resources/diacritics_allowlist.json",
+  "protected_terms_path": "resources/protected_terms.json"
+}

@@ -1,0 +1,70 @@
+protocol: v2
+experiment: BASE
+variant: standard
+seed: 42
+
+model_id: uitnlp/visobert
+model_revision: RESOLVE_AND_LOCK_BEFORE_RUN
+dataset_id: uitnlp/vihsd
+dataset_revision: RESOLVE_AND_LOCK_BEFORE_RUN
+data_hash: COMPUTE_BEFORE_RUN
+
+train_path: null
+validation_path: null
+test_path: null
+data_manifest_path: null
+label2id:
+  CLEAN: 0
+  OFFENSIVE: 1
+  HATE: 2
+
+augmentation: none
+augmentation_version: null
+augmentation_seed: 20261022
+candidate_rate: 0.25
+augmentation_hash: null
+augmentation_manifest_path: null
+combined_train_hash: null
+lexicon_hash: null
+allowlist_hash: null
+protected_terms_hash: null
+
+max_length: 128
+padding_side: right
+attention_implementation: eager
+learning_rate: 0.00002
+epochs: 10
+micro_batch: 8
+eval_batch: 16
+gradient_accumulation: 5
+world_size: 1
+weight_decay: 0.01
+adam_beta1: 0.9
+adam_beta2: 0.999
+adam_epsilon: 0.00000001
+warmup_ratio: 0.06
+max_grad_norm: 1.0
+precision: fp16
+selection_metric: macro_f1
+save_total_limit: 2
+logging_steps: 50
+
+cnn_kernels: [2, 3, 4]
+cnn_channels: 64
+fusion_dim: 256
+head_dropout: 0.1
+cnn_pooling: max
+normalize_branches: false
+residual_gate: false
+loss_type: cross_entropy
+class_weight_power: 0.5
+focal_gamma: 0.0
+encoder_learning_rate: null
+head_learning_rate: null
+early_stopping_patience: null
+
+matched_update_steps: null
+eval_steps: null
+code_revision: LOCK_BEFORE_FINAL_RUN
+test_prediction_access: final_evaluation_only
+prelock_test_access: integrity_audit_only

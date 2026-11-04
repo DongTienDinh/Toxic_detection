@@ -1,0 +1,11 @@
+{
+  "resource_type": "protected_terms",
+  "version": "draft-unverified",
+  "status": "unverified",
+  "source_resource": "manual_review",
+  "source_revision": "NOT_APPLICABLE",
+  "source_split": "train_only_evidence",
+  "source_license": "RECORD_PER_ENTRY",
+  "derived_artifact_license": "REVIEW_BEFORE_PUBLICATION",
+  "entries": []
+}

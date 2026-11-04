@@ -1,0 +1,46 @@
+# Secrets and local credentials
+.env
+.env.*
+*.token
+secrets/
+
+# Python/tool caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Local environments and editor files
+.venv/
+venv/
+.idea/
+.vscode/
+
+# Gated/raw data and generated experiment artifacts
+data/
+data/raw/
+data/private/
+private/
+PRIVATE/
+artifacts/
+runs/
+outputs/
+final_eval/
+checkpoints/
+wandb/
+*.jsonl
+*.csv
+
+# Large model/data outputs
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.parquet
+
+# OS noise
+.DS_Store
+Thumbs.db

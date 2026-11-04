@@ -1,0 +1,17 @@
+# Kaggle training API reference. Do not reinstall torch/CUDA blindly.
+transformers==4.57.1
+datasets
+accelerate
+sentencepiece
+protobuf
+huggingface_hub
+safetensors
+scikit-learn
+pandas
+numpy
+scipy
+matplotlib
+pyyaml
+pytest
+pyarrow
+nbformat

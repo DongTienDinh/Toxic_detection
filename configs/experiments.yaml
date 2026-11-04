@@ -1,0 +1,90 @@
+experiments:
+  BASE:
+    variant: standard
+    augmentation: none
+    augmentation_version: null
+  POOL:
+    variant: mean
+    augmentation: none
+    augmentation_version: null
+  CNN:
+    variant: cnn
+    augmentation: none
+    augmentation_version: null
+  CONCAT:
+    variant: concat
+    augmentation: none
+    augmentation_version: null
+  GATE:
+    variant: gated
+    head_dropout: 0.15
+    augmentation: none
+    augmentation_version: null
+    cnn_pooling: max_mean
+    normalize_branches: true
+    residual_gate: true
+    loss_type: focal
+    focal_gamma: 1.5
+    encoder_learning_rate: 0.000015
+    head_learning_rate: 0.00005
+    early_stopping_patience: null
+  BASE_AEDA:
+    variant: standard
+    augmentation: aeda
+    augmentation_version: aeda_vi_v1
+  GATE_AEDA:
+    variant: gated
+    head_dropout: 0.15
+    augmentation: aeda
+    augmentation_version: aeda_vi_v1
+    cnn_pooling: max_mean
+    normalize_branches: true
+    residual_gate: true
+    loss_type: focal
+    focal_gamma: 1.5
+    encoder_learning_rate: 0.000015
+    head_learning_rate: 0.00005
+    early_stopping_patience: null
+  GATE_TEEN:
+    variant: gated
+    head_dropout: 0.15
+    augmentation: vietnamese
+    augmentation_version: vi_teencode_v1
+    cnn_pooling: max_mean
+    normalize_branches: true
+    residual_gate: true
+    loss_type: focal
+    focal_gamma: 1.5
+    encoder_learning_rate: 0.000015
+    head_learning_rate: 0.00005
+    early_stopping_patience: null
+  GATE_ACCENT:
+    variant: gated
+    head_dropout: 0.15
+    augmentation: vietnamese
+    augmentation_version: vi_partial_diacritics_v1
+    cnn_pooling: max_mean
+    normalize_branches: true
+    residual_gate: true
+    loss_type: focal
+    focal_gamma: 1.5
+    encoder_learning_rate: 0.000015
+    head_learning_rate: 0.00005
+    early_stopping_patience: null
+  BASE_VI:
+    variant: standard
+    augmentation: vietnamese
+    augmentation_version: vi_social_aug_v1
+  GATE_VI:
+    variant: gated
+    head_dropout: 0.15
+    augmentation: vietnamese
+    augmentation_version: vi_social_aug_v1
+    cnn_pooling: max_mean
+    normalize_branches: true
+    residual_gate: true
+    loss_type: focal
+    focal_gamma: 1.5
+    encoder_learning_rate: 0.000015
+    head_learning_rate: 0.00005
+    early_stopping_patience: null

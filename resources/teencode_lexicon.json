@@ -1,0 +1,11 @@
+{
+  "resource_type": "teencode_lexicon",
+  "version": "draft-unverified",
+  "status": "unverified",
+  "source_resource": "ngxtnhi/ViLexNorm",
+  "source_revision": "RESOLVE_BEFORE_BUILD",
+  "source_split": "train",
+  "source_license": "CC-BY-NC-SA-4.0",
+  "derived_artifact_license": "REVIEW_BEFORE_PUBLICATION",
+  "entries": []
+}
